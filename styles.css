@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    outline: none;
+    user-select: none;
+}
+
+:root {
+    --button-green: rgb(4, 195, 115);
+}
+
+.container {
+    max-width: 1096px;
+    padding: 0 32px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+button {
+    border: none;
+    padding: 16px 32px;
+    font-weight: 700;
+    border-radius: 16px;
+    background-color: var(--button-green);
+    color: #ffffff;
+    cursor: pointer;
+    border: 2px solid var(--button-green);
+    &:hover {
+        background-color: transparent;
+        color: var(--button-green);
+    }
+}
+
+input[type="text"] {
+    border: none;
+    border: 1px solid black;
+    padding: 16px 32px 16px 16px;
+    border-radius: 16px;
+}
+
+.header__title {
+    margin-top: 32px;
+}
+
+.header__description {
+    margin-top: 16px;
+    color: #8a8a8a;
+    font-size: 18px;
+}
+
+.tasks {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+.task {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+}
+.task__button {
+    margin-top: 32px;
+    align-self: flex-end;
+}
+
+.task__title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.task__description {
+    margin-top: 24px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.task__list {
+    margin-top: 24px;
+    list-style-type: none;
+    font-weight: 400;
+}
+
+.task__list .list__element {
+    margin-top: 8px;
+}
+
+.task__list_three-task {
+    display: flex;
+    gap: 20px;
+}
+
+.task__todo {
+    margin-top: 24px;
+}
+
+.rect {
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+}
+.blue {
+    background-color: blue;
+}
