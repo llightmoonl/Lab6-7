@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Лабораторная работа 4</title>
         <link href="styles.css" rel="stylesheet" />
+        <script defer src="index.js"></script>
     </head>
     <body>
         <header class="header">
@@ -32,11 +33,11 @@
                         <h2 class="task__title">Задание 2.</h2>
                         <div class="task__description">
                             <p class="task__text">Вычислите выражение с помощью JavaScript</p>
-                            <ul class="task__list">
-                                <li class="list__element">2 + 3 =</li>
-                                <li class="list__element">2 - 3 =</li>
-                                <li class="list__element">2 * 3 =</li>
-                                <li class="list__element">2 / 3 =</li>
+                            <ul class="task__list task__two-wrapper">
+                                <li class="list__element sum">2 + 3 =</li>
+                                <li class="list__element minus">2 - 3 =</li>
+                                <li class="list__element multi">2 * 3 =</li>
+                                <li class="list__element div">2 / 3 =</li>
                             </ul>
                         </div>
                         <button class="task__button task__two">Проверка</button>
@@ -50,10 +51,10 @@
                                 конструкции:
                             </p>
                             <ul class="task__list task__list_three-task">
-                                <li class="list__element"><div class="rect red"></div></li>
-                                <li class="list__element"><div class="rect yellow"></div></li>
-                                <li class="list__element"><div class="rect green"></div></li>
-                                <li class="list__element"><div class="rect blue"></div></li>
+                                <li class="list__element"><span class="rect red"></span></li>
+                                <li class="list__element"><span class="rect yellow"></span></li>
+                                <li class="list__element"><span class="rect green"></span></li>
+                                <li class="list__element"><span class="rect blue"></span></li>
                             </ul>
                         </div>
                     </div>
@@ -68,24 +69,21 @@
                                 <input type="text" />
                                 <button>Добавить</button>
                             </form>
-                            <ul class="task__list">
+                            <ul class="task__list task__four">
                                 <li class="list__element">Лук</li>
                                 <li class="list__element">Картошка</li>
                                 <li class="list__element">Мясо</li>
-                                <li class="list__element">...</li>
                             </ul>
-                         </div>
+                        </div>
                     </div>
                     <div class="task">
                         <h2 class="task__title">Задание 5.</h2>
                         <div class="task__description">
                             <p class="task__text">
-                                Исправьте программу, чтоб выводилось на экран текущая время и дата. А также разработайте
-                                секундомер
+                                Исправьте программу, чтоб выводилось на экран текущая время и дата.
                             </p>
-                            <p>Сегодня: 23 октября 2024 года, среда</p>
-                            <p>Текущее время: 16:52:3</p>
-                            <p>секундомер: 00:00:00</p>
+                            <p class="task__text task__current-date">Сегодня:</p>
+                            <p class="task__text task__current-time"></p>
                         </div>
                     </div>
                 </div>
